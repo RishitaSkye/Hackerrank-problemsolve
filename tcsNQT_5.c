@@ -11,17 +11,6 @@ As 7 is the first element, it will consider in the result.
 Since total of  3 elements is present in the array that meets the condition.
 Hence the output = 3.
 
-Example 1:
-Input :
-5 -> Value of N, represents size of Arr
-7-> Value of Arr[0]
-4 -> Value of Arr[1]
-8-> Value of Arr[2]
-2-> Value of Arr[3]
-9-> Value of Arr[4]
-Output :
-3
-
 Example 2:
 input:
 5   -> Value of N, represents size of Arr
@@ -36,7 +25,18 @@ Output :
 Constraints:
 1<=N<=20
 1<=Arr[i]<=10000
-*/
+*/Example 1:
+Input :
+5 -> Value of N, represents size of Arr
+7-> Value of Arr[0]
+4 -> Value of Arr[1]
+8-> Value of Arr[2]
+2-> Value of Arr[3]
+9-> Value of Arr[4]
+Output :
+3
+
+
 #include<stdio.h>
 
 int countGreaterElement(int arr[],int n){
