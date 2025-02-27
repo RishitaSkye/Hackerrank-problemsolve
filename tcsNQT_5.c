@@ -37,3 +37,32 @@ Constraints:
 1<=N<=20
 1<=Arr[i]<=10000
 */
+#include<stdio.h>
+
+int countGreaterElement(int arr[],int n){
+    if(n==0) return 0;  
+int count=1;   //first element is always counted
+int max_so_far=arr[0];       //track max seen so far
+for(int i=1;i<n;i++){
+    if(arr[i]>max_so_far){
+        count++;
+        max_so_far=arr[i];  //update the maximum
+    }
+}
+return count;
+}
+int main(){
+    //Taking input 
+    int n;
+    printf("Enter the size of array(N):",n);
+    scanf("%d",&n);
+
+    int arr[n];
+    printf("Enter %d elements:",n);
+    for(int i=0;i<n;i++){
+        scanf("%d",&arr[i]);
+    }
+    int result=countGreaterElement(arr,n);
+    printf("Output:%d",result);
+    return 0;
+}
